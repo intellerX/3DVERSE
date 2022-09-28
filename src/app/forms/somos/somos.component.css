@@ -1,0 +1,432 @@
+.home,
+.info,
+body,
+.menu-containe {
+  background-size: cover;
+  background-position: center, center;
+
+  background-image: url("../../../assets/icons/patron1.png");
+}
+
+* {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif !important;
+}
+.info {
+  margin-top: 50px;
+  overflow-x: hidden;
+}
+.col,
+.col-sm {
+  width: auto;
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+.btn {
+  border-radius: 0;
+  width: 100%;
+}
+.card-img-top:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 940px;
+  position: relative;
+  display: left;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.cont-right {
+  left: 32%;
+}
+
+.container .hexagon {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  margin: 30px 8px 70px;
+  padding: 0;
+}
+.container .hexagon .shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.img_right {
+  left: 375px !important;
+}
+
+.container .hexagon:hover .shape {
+  transform: translateY(-30px);
+}
+.container .hexagon .shape img {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sub-content {
+  width: 100%;
+  height: 100%;
+  padding-left: 24%;
+}
+.sub-content2 {
+  width: 100%;
+  height: 100%;
+  padding-right: 24%;
+  margin-top: 11%;
+}
+
+h3{
+  font: 498 21px/28px Roboto, "Helvetica Neue", sans-serif;
+
+}
+
+.sub-content h2,
+.sub-content2 h2 {
+  font: 498 30px/32px Roboto, "Helvetica Neue", sans-serif;
+}
+.sub-content p,
+.sub-content2 p {
+  font: 498 19px/20px Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container .hexagon .shape .content {
+  padding-left: 50px;
+  z-index: 0;
+  position: relative;
+  top: 22px;
+  left: 50%;
+  width: 192%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(45deg, #f4782d, #ff9800);
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 5px;
+
+  -webkit-transition: left 0.2s ease-out, opacity 0.2s ease-out;
+  -ms-transition: left 0.2s ease-out, opacity 0.2s ease-out;
+  transition: left 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.container .hexagon .shape .content2 {
+  padding-right: 50px;
+  z-index: 0;
+  position: relative;
+  top: 22px;
+  right: 50%;
+  width: 192%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(4deg, #8b8b8b, #414141);
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 5px;
+
+  -webkit-transition: right 0.2s ease-out, opacity 0.2s ease-out;
+  -ms-transition: right 0.2s ease-out, opacity 0.2s ease-out;
+  transition: right 0.2s ease-out, opacity 0.2s ease-out;
+}
+.container-img-responsive {
+  height: unset !important;
+  margin-left: 22%;
+  width: 57% !important;
+  object-fit: contain !important;
+  display: block;
+  margin-top: 8%;
+  position: relative !important;
+}
+.sub-content p,
+.sub-content2 p {
+  font: 400 25px/30px Roboto, "Helvetica Neue", sans-serif;
+}
+.sub-content-alter p {
+  font: 400 20px/23px Roboto, "Helvetica Neue", sans-serif !important;
+}
+
+.container .hexagon .shape .content {
+  opacity: 1;
+}
+.container .hexagon .shape .content2 {
+  opacity: 1;
+}
+
+#categories {
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+}
+.clr:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#categories li {
+  position: relative;
+  list-style-type: none;
+  width: 27.85714285714286%; /* = (100-2.5) / 3.5 */
+  padding-bottom: 32.16760145166612%; /* =  width /0.866 */
+  float: left;
+  overflow: hidden;
+  visibility: hidden;
+
+  -webkit-transform: rotate(-60deg) skewY(30deg);
+  -ms-transform: rotate(-60deg) skewY(30deg);
+  transform: rotate(-60deg) skewY(30deg);
+}
+#categories li:nth-child(3n + 2) {
+  margin: 0 1%;
+}
+#categories li:nth-child(6n + 4) {
+  margin-left: 0.5%;
+}
+#categories li:nth-child(6n + 4),
+#categories li:nth-child(6n + 5),
+#categories li:nth-child(6n + 6) {
+  margin-top: -6.9285714285%;
+  margin-bottom: -6.9285714285%;
+
+  -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  transform: translateX(50%) rotate(-60deg) skewY(30deg);
+}
+#categories li:nth-child(6n + 4):last-child,
+#categories li:nth-child(6n + 5):last-child,
+#categories li:nth-child(6n + 6):last-child {
+  margin-bottom: 0%;
+}
+#categories li * {
+  position: absolute;
+  visibility: visible;
+}
+#categories li > div {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+
+  -webkit-transform: skewY(-30deg) rotate(60deg);
+  -ms-transform: skewY(-30deg) rotate(60deg);
+  transform: skewY(-30deg) rotate(60deg);
+
+  -webkit-backface-visibility: hidden;
+}
+
+/* HEX CONTENT */
+#categories li img {
+  left: -100%;
+  right: -100%;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#categories div h1 {
+  width: 100%;
+  padding: 0 5%;
+  background-color: #7a7a7a8c;
+  background-color: rgba(155, 155, 155, 0.8);
+  font-family: "Raleway", sans-serif;
+}
+#categories li h1 {
+  bottom: 110%;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 100%;
+  padding-top: 100%;
+  padding-bottom: 100%;
+}
+#categories li h1:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 45%;
+  width: 10%;
+  text-align: center;
+  z-index: 1;
+  border-bottom: 2px solid #fff;
+}
+
+#categories .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.type1 {
+  background: linear-gradient(45deg, #f4782d, rgb(255, 126, 0));
+}
+.type2 {
+  background: linear-gradient(45deg, black, rgb(219 208 197));
+}
+
+/* HOVER EFFECT  */
+
+#categories li:hover div {
+  opacity: 5;
+}
+
+#fork {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 0.5em 0.7em;
+  margin: 1%;
+  transition: color 0.5s;
+  overflow: hidden;
+}
+#fork:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  transform-origin: 0 0;
+  transform: translateX(-100%) skewX(-45deg);
+  transition: transform 0.5s;
+}
+#fork:hover {
+  color: #fff;
+}
+#fork:hover:before {
+  transform: translateX(0) skewX(-45deg);
+}
+
+.column {
+  float: left;
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 768px) {
+  .content .type2 p {
+    font: 400 9px/28px Roboto, "Helvetica Neue", sans-serif;
+  }
+  .content .type2 h3 {
+    font: 400 9px/28px Roboto, "Helvetica Neue", sans-serif;
+  }
+  .container .hexagon {
+    width: 358px;
+    height: 307px;
+  }
+
+  .container .hexagon .shape .content {
+    opacity: 1;
+  }
+  .container .hexagon .shape .content2 {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 450px) {
+  .cont-right {
+    left: 41%;
+  }
+
+  .img_right {
+    left: 46px !important;
+  }
+
+  .content p {
+    font: 400 65%/10px Roboto, "Helvetica Neue", sans-serif !important;
+  }
+  .content h3 {
+    font: 400 50%/15px Roboto, "Helvetica Neue", sans-serif !important;
+  }
+  .container .hexagon {
+    width: 166px;
+    height: 146px;
+  }
+
+  .container-img-responsive {
+    margin-top:-21% !important;
+  }
+
+
+  .container img {
+    top: 18px !important;
+    left: -17px;
+    width: 0;
+    height: 112%;
+  }
+
+  .container .hexagon .shape .content {
+    width: 279px;
+    opacity: 1;
+    height: 94%;
+  }
+
+  .container .hexagon .shape .content2 {
+    right: 100%;
+    width: 290px;
+    opacity: 1;
+    height: 94%;
+  }
+  .sub-content h2,
+  .sub-content2 h2 {
+    font: 498 14px/0px Roboto, "Helvetica Neue", sans-serif;
+  }
+  .sub-content p,
+  .sub-content2 p {
+    font: 498 65%/13px Roboto, "Helvetica Neue", sans-serif;
+  }
+  .sub-content-alter p {
+    margin: 0;
+  }
+
+  .sub-content {
+    padding-left:28%;
+  }
+  
+}

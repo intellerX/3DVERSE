@@ -1,0 +1,56 @@
+<app-nav-bar></app-nav-bar>
+<div class="content-login">
+	<div class="login-wrap">
+		<form [formGroup]="form" class="login-html" (ngSubmit)="subscribe()">
+			<input id="tab-1" type="radio" name="tab" class="sign-in" checked /><label for="tab-1"
+				class="tab">Inscripción a
+				curso</label>
+			<input id="tab-2" type="radio" name="tab" class="sign-up" /><label for="tab-2" class="tab"></label>
+			<div class="login-form">
+				<div class="sign-in-htm">
+
+					<div class="group">
+						<label for="user" class="label">Curso</label>
+						<mat-form-field appearance="fill">
+							<mat-label style="color:white;">Seleciona el curso</mat-label>
+							<mat-select formControlName="nombre" style="color:white;"
+								(selectionChange)="select($event.value)">
+								<mat-option *ngFor="let course of courses" [value]="course.nombre"
+									style="min-width: 100%">
+									{{course.nombre}}
+								</mat-option>
+							</mat-select>
+						</mat-form-field>
+					</div>
+
+
+					<div class="group">
+						<label for="user" class="label">CORREO</label>
+						<input id="user" type="text" class="input" formControlName="email">
+					</div>
+					<div class="group">
+						<label for="pass" class="label">CONTRASEÑA</label>
+						<input id="pass" type="password" class="input" data-type="password" formControlName="password">
+					</div>
+					<div class="group">
+						<label for="pass" class="label">COSTO</label>
+						<input readonly formControlName="amount_paid" id="pass" type="text" class="input"
+							data-type="password" formControlName="costo">
+					</div>
+
+					<div class="group">
+						<input type="submit" class="button" value="Inscribir">
+					</div>
+					<div class="hr"></div>
+
+				</div>
+
+			</div>
+		</form>
+	</div>
+
+</div>
+
+
+
+<app-footer></app-footer>

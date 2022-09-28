@@ -1,0 +1,64 @@
+<nav class="navbar navbar-light  scrolling-navbar fixed-top gris">
+
+  <nav class="navbar navbar-light ">
+    <img [@slideInOut]="helpMenu" src="../../../assets/icons/Imagen1.png" class="animate__animated animate__backInDown"
+      alt="">
+
+  </nav>
+
+  <nav class="navbar navbar-expand-sm navbar-light  ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="">INICIO <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/conocenos">¿QUIÉNES SOMOS?</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="../../../assets/icons/Imagen7.png" width="17" height="20" alt="">
+            SERVICIOS
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="inscripciones">
+              <img src="../../../assets/icons/Inscripciones.png" width="43" height="40" alt="">
+              Inscripción para Cursos</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/info_agora">
+              <img src="../../../assets/icons/ágora.png" width="43" height="40" alt="">
+              Agora</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/info_sst">
+              <img src="../../../assets/icons/consulta.png" width="43" height="40" alt="">
+              Interventoría</a>
+            <a class="dropdown-item" href="/info_sst">
+              <img src="../../../assets/icons/aliado.png" width="43" height="40" alt="">
+              Inspector SST Altux</a>
+
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CURSOS</a>
+        </li>
+      </ul>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          👤 Iniciar Sesión
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/login">Perfil</a>
+          <a class="dropdown-item" href="/">Home</a>
+          <a class="dropdown-item" href="/login">Login 👥</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</nav>

@@ -1,0 +1,33 @@
+<div class="container">
+    <h1>Formaciones</h1>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" *ngFor="let head of headElements">{{head}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let element of elements">
+                <td data-label="Account">{{element.nombre}}</td>
+                <td data-label="Due Date">{{element.descripcion}}</td>
+                <td data-label="Amount">{{element.fecha_inicio}}</td>
+                <td data-label="Period">{{element.fecha_fin}}</td>
+                <td>
+                    <button type="button" class="btn btn-primary">Adquirir</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <div class="btn-group" role="group" aria-label="Basic example">
+
+        <button type="button" class="btn btn-secondary">Atrás</button>
+        <button type="button" class="btn btn-secondary">Siguiente</button>
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+</div>

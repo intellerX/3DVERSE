@@ -1,0 +1,77 @@
+<app-nav-bar></app-nav-bar>
+<div class="content-login">
+	<div class="login-wrap">
+		<div class="login-html">
+
+			<input id="tab-1" type="radio" name="tab" class="sign-in" checked /><label for="tab-1" class="tab">Iniciar
+				Sesión</label>
+			<input id="tab-2" type="radio" name="tab" class="sign-up" /><label for="tab-2"
+				class="tab">Regístrate</label>
+			<div class="login-form">
+				<form [formGroup]="form" (ngSubmit)="submit()">
+
+					<div class="sign-in-htm">
+						<div class="group">
+							<label for="user" class="label">Correo</label>
+							<input formControlName="email" id="user" type="text" class="input">
+						</div>
+						<div class="group">
+							<label for="pass" class="label">Contraseña</label>
+							<input formControlName="password" id="pass" type="password" class="input"
+								data-type="password">
+						</div>
+						<div class="group">
+							<input id="check" type="checkbox" class="check" checked />
+							<label for="check"><span class="icon"></span>Mantener sesión</label>
+						</div>
+						<div class="group">
+							<input type="button" class="button" value="Iniciar Sesión" (click)="submit()">
+
+						</div>
+						<div class="hr"></div>
+						<div class="foot-lnk">
+							<a href="#forgot">Olvidó su contraseña?</a>
+						</div>
+					</div>
+				</form>
+				<form [formGroup]="form_register" (ngSubmit)="submit_register()">
+
+					<div class="sign-up-htm">
+						<div class="group">
+							<label for="name" class="label">Nombre</label>
+							<input formControlName="nombre" id="name" type="text" class="input">
+
+							<label for="last_name" class="label">Apelldo</label>
+							<input formControlName="apellido" id="last_name" type="text" class="input">
+
+						</div>
+						<div class="group">
+							<label for="pass" class="label">Contraseña</label>
+							<input formControlName="password" id="pass" type="password" class="input"
+								data-type="password">
+						</div>
+						<div class="group">
+							<label for="repita_contraseña" class="label">Repita la contraseña</label>
+							<input formControlName="repita_contraseña" id="repita_contraseña" type="password"
+								class="input" data-type="password">
+						</div>
+						<div class="group">
+							<label for="pass" class="label">Correo</label>
+							<input formControlName="email" id="pass" type="text" class="input">
+						</div>
+						<div class="group">
+							<input type="button" class="button" value="Registrarme" (click)="submit_register()">
+						</div>
+						<div class="hr"></div>
+
+
+					</div>
+				</form>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,28 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Instructor</th>
+                <th scope="col">Fecha Fin</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Botones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let elemento of listaelementos">
+                <td>{{elemento.nombre}}</td>
+                <td>
+                    {{elemento.instructor.user.nombre}}
+                    {{elemento.instructor.user.apellido}}
+                </td>
+                <td>{{elemento.fecha_fin}}</td>
+                <td>{{elemento.estado}}</td>
+                <button type="button" class="btn btn-success" (click)="updateVehicle(elemento.id)">Ver</button>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<app-footer></app-footer>
