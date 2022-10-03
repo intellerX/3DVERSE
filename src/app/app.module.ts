@@ -25,6 +25,7 @@ import { RescateComponent } from './forms/courses/rescate/rescate.component';
 import { AgoraComponent } from './forms/info/agora/agora.component';
 import { SstComponent } from './forms/info/sst/sst.component';
 import { BuySuccesComponent } from './forms/courses/buy-succes/buy-succes.component';
+import { ColleccionesComponent } from './forms/collecciones/collecciones.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { BuySuccesComponent } from './forms/courses/buy-succes/buy-succes.compon
     AgoraComponent,
     SstComponent,
     BuySuccesComponent,
+    ColleccionesComponent,
   ],
   imports: [
     BrowserModule,
